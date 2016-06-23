@@ -22,7 +22,7 @@ function LGLogo(contex) {
         + chalk.magenta('| |_____     \\ \\______/ /\n')
         +   chalk.blue('|_______|      \\______/') + '    ' + version + '\n\n';
 
-    logo += ('need help?') + chalk.magenta('  ===>  ') + chalk.green('yo lg:h') + '\n';
+    logo += ('need help?') + chalk.magenta('  ===>  ') + chalk.green('yo lgs:h') + '\n';
 
     if (contex) {
         logo += '\nCMD: '+ chalk.green(contex.rootGeneratorName()) + '\n';

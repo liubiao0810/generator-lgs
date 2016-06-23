@@ -13,13 +13,13 @@ module.exports = generators.Base.extend({
         console.log(logo(this));
         var txt = [
             '',
-            'lg@v' + this.pkg.version,
+            'lgs@v' + this.pkg.version,
             'node@v' + process.version.substring(1),
             'os@' + os.type() + ' ' + os.release(),
             '',
             'Yeoman 命令',
-            '   yo lg:h       显示帮助',
-            '   yo lg         在根目录执行，初始化Project',
+            '   yo lgs:h       显示帮助',
+            '   yo lgs         在根目录执行，初始化Project',
             '',
             'gulp 命令',
             '   gulp        启动server调试服务',
@@ -27,7 +27,7 @@ module.exports = generators.Base.extend({
             '   gulp clean  清除项目',
             '',
             '',
-            '工具文档：https://github.com/liubiao0810/generator-lg',
+            '工具文档：https://github.com/liubiao0810/generator-lgs',
             'author by @花夏'
         ].join('\n');
         console.log(txt);
