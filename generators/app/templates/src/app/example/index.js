@@ -51,6 +51,16 @@ module.exports = Vue.extend({
                         value: 316
                     }
                 ] // 数据
+            },
+            pagesdata: {
+                options: {},
+                data: {
+                    pageCurNum: 1, // 当前页数
+                    totalPages: 10, // 总页数
+                    pageSize: 20, // 每页显示的数量
+                    totalMsg: '', // 总共数据展示信息
+                    startPage: 1 // 开始页
+                }
             }
         };
     },
@@ -58,7 +68,8 @@ module.exports = Vue.extend({
         
     },
     components: {
-        'v-select': require('../components/v-select/')
+        'v-select': require('../components/v-select/'),
+        'v-pages': require('../components/v-pages/')
     },
     methods: {
         click: function () {
