@@ -8,8 +8,8 @@ var config = require('./');
 
 module.exports = {
     root: config.sourceDirectory,
-    jQSrc: config.devModulesPath + '/jquery/dist/**/*',
-    jQDest: config.publicDirectory + '/lib/jquery/',
     seUISrc: config.sourceDirectory + '/common/semantic-ui/**/*',
-    seUiDest: config.publicDirectory + '/lib/semantic-ui/'
+    seUiDest: config.publicDirectory + '/lib/semantic-ui/',
+    sweetalertSrc: config.sourceDirectory + '/common/sweetalert/**/*',
+    sweetalertDest: config.publicDirectory + '/lib/sweetalert/'
 };

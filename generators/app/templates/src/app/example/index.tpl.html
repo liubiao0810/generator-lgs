@@ -1,6 +1,12 @@
 <h1>
     :)~ hello generator-lgs!
 </h1>
+</br>
 <v-select :selectobj.sync="selectKind"></v-select>
-<v-pages :pagesdata.sync="pagesdata"></v-pages>
-<button @click="click">get</button>
+</br></br>
+<v-pages :pagesdata.sync="pagesdata" class="text-l"></v-pages>
+</br>
+<button class="ui green button" @click="click">get</button>
+<button class="ui teal button" @click="alert">alert</button>
+<button class="ui orange button" @click="confirm">confirm</button>
+<button class="ui red button" @click="errAlert">errAlert</button>

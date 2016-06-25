@@ -49,11 +49,12 @@ module.exports = generators.Base.extend({
                         }
 
                         console.log(chalk.green('\n\nnpm was installed successful. \n\n'));
+                        console.log(chalk.green('\n进入根目录运行：gulp  or  gulp server\n'));
                     });
                 } else {
                     console.log(chalk.red('\n\nplease run "npm install" before gulp\n'));
                     console.log(chalk.green('\ndone!\n'));
-                    console.log(chalk.green('\n进入根目录运行：gulp  or   gulp server\n'));
+                    console.log(chalk.green('\n进入根目录运行：gulp  or  gulp server\n'));
                 }
                 cb();
             }.bind(this));

@@ -81,6 +81,24 @@ module.exports = Vue.extend({
                     console.log(json);
                 }
             });
+        },
+        alert: function () {
+            swal("hello LGS!")
+        },
+        errAlert: function () {
+            swal("Cancelled", "Your imaginary file is safe :)", "error");
+        },
+        confirm: function () {
+            swal({
+                title: "Are you sure?",
+                text: "Your will not be able to recover this imaginary file!",
+                type: "info",
+                showCancelButton: true,
+                closeOnConfirm: false
+            },
+            function() {
+                swal("Deleted!", "Your imaginary file has been deleted.", "success");
+            });
         }
     }
 });

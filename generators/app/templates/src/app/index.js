@@ -10,7 +10,8 @@ window.$ = window.jQuery = require('jquery');
 require('./index.css');
 // 引用semantic-ui
 require('./common/semantic-ui/semantic.min.js');
-
+// 引用sweetalert
+require('./common/sweetalert/sweetalert.min.js');
 Vue.use(VueRouter);
 var router = new VueRouter({
     saveScrollPosition: true

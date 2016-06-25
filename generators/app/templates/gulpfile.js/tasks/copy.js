@@ -9,5 +9,5 @@ var gulp   = require('gulp');
 
 gulp.task('copy', function () {
     gulp.src(config.seUISrc).pipe(gulp.dest(config.seUiDest));
-    return gulp.src(config.jQSrc).pipe(gulp.dest(config.jQDest));
+    gulp.src(config.sweetalertSrc).pipe(gulp.dest(config.sweetalertDest));
 });
