@@ -85,8 +85,23 @@ module.exports = Vue.extend({
         alert: function () {
             swal("hello LGS!")
         },
-        errAlert: function () {
-            swal("Cancelled", "Your imaginary file is safe :)", "error");
+        prompt: function () {
+            swal({
+                title: "输入框来了",
+                text: "这里可以输入并确认:",
+                type: "input",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                animation: "slide-from-top",
+                inputPlaceholder: "填点东西到这里面吧"
+            }, function(inputValue) {
+                if (inputValue === false) return false;
+                if (inputValue === "") {
+                    swal.showInputError("请输入!");
+                    return false;
+                }
+                swal("棒极了!", "您填写的是: " + inputValue, "success");
+            });
         },
         confirm: function () {
             swal({
