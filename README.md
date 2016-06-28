@@ -5,6 +5,12 @@
 2. [twbs-pagination](http://esimakin.github.io/twbs-pagination/)
 3. [sweetalert弹窗](http://www.dglives.com/demo/sweetalert-master/example/)
 
+##支持组件列表：
+
+        ├── checkbox
+        ├── pages(分页器)
+        ├── radio
+        ├── select
 命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池
 第一组开源项目统一用`lg(陵光，朱雀)`
 
