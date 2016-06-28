@@ -16,7 +16,7 @@ module.exports = Vue.extend({
             selectKind: {
                 inputName: 'kindId', // 选择的name字段
                 defaultText: '不限品类', // 默认请选择
-                checked: -1, // 选中value值
+                checkedData: -1, // 选中value值
                 data: [
                     {
                         text: '不限品类',
@@ -61,6 +61,36 @@ module.exports = Vue.extend({
                     totalMsg: '', // 总共数据展示信息
                     startPage: 1 // 开始页
                 }
+            },
+            checkboxdata: {
+                title: '优惠项目:',
+                data: [
+                    {
+                        title: '交通方便',
+                        val: '1',
+                        isDisabled: false,
+                        isChecked: true
+                    },
+                    {
+                        title: '免费wifi',
+                        val: '2',
+                        isDisabled: false,
+                        isChecked: true
+                    },
+                    {
+                        title: '免费停车',
+                        val: '3',
+                        isDisabled: true,
+                        isChecked: true
+                    },
+                    {
+                        title: '不满意退款',
+                        val: '4',
+                        isDisabled: false,
+                        isChecked: true
+                    }
+                ],
+                checkedVal: ['1', '2', '4'] // 默认选中的值
             }
         };
     },
@@ -69,7 +99,20 @@ module.exports = Vue.extend({
     },
     components: {
         'v-select': require('../components/v-select/'),
-        'v-pages': require('../components/v-pages/')
+        'v-pages': require('../components/v-pages/'),
+        'v-checkbox': require('../components/v-checkbox/')
+    },
+    watch: {
+        'checkboxdata.checkedVal': {
+            handler: function (val, oldVal) {
+                console.log(val);
+            }
+        },
+        'selectKind.checkedData': {
+            handler: function (val, oldVal) {
+                console.log(val);
+            }
+        }
     },
     methods: {
         click: function () {

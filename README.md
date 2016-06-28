@@ -1,5 +1,6 @@
 # generator-lgs 脚手架 (基于[Semantic UI](http://semantic-ui.cn/introduction/getting-started.html)定制)
 同 [generator-lgs](https://github.com/liubiao0810/generator-lgs)完全一样只是集成了以下公共库
+
 1. [Semantic UI](http://semantic-ui.cn/introduction/getting-started.html)
 2. [twbs-pagination](http://esimakin.github.io/twbs-pagination/)
 3. [sweetalert弹窗](http://www.dglives.com/demo/sweetalert-master/example/)
