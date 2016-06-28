@@ -4,3 +4,6 @@
 .dsy-inb {
     display: inline-block;
 }
+.label-poi {
+    cursor: pointer!important;
+}

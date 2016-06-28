@@ -91,6 +91,28 @@ module.exports = Vue.extend({
                     }
                 ],
                 checkedVal: ['1', '2', '4'] // 默认选中的值
+            },
+            radiodata: {
+                title: '性别:',
+                name: 'sex',
+                data: [
+                    {
+                        title: '男',
+                        val: '1',
+                        isDisabled: false
+                    },
+                    {
+                        title: '女',
+                        val: '2',
+                        isDisabled: true
+                    },
+                    {
+                        title: '女博士',
+                        val: '3',
+                        isDisabled: false
+                    }
+                ],
+                checkedVal: '3' // 默认选中的值
             }
         };
     },
@@ -100,7 +122,8 @@ module.exports = Vue.extend({
     components: {
         'v-select': require('../components/v-select/'),
         'v-pages': require('../components/v-pages/'),
-        'v-checkbox': require('../components/v-checkbox/')
+        'v-checkbox': require('../components/v-checkbox/'),
+        'v-radio': require('../components/v-radio/')
     },
     watch: {
         'checkboxdata.checkedVal': {
@@ -109,6 +132,11 @@ module.exports = Vue.extend({
             }
         },
         'selectKind.checkedData': {
+            handler: function (val, oldVal) {
+                console.log(val);
+            }
+        },
+        'radiodata.checkedVal': {
             handler: function (val, oldVal) {
                 console.log(val);
             }
