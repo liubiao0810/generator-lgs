@@ -11,6 +11,11 @@
         ├── pages(分页器)
         ├── radio
         ├── select
+
+##增加新功能列表：
+
+        ├── [mockjs](http://mockjs.com/examples.html#)
+
 命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池
 第一组开源项目统一用`lg(陵光，朱雀)`
 
